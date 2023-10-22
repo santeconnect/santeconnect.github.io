@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/notification.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Notification | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+    <style>
+        .notif-text, .heure-notif{
+            font-size: 15px;
+        }
+        .type-notif{
+            font-size: 17px;
+        }
+        .circle-icon{
+            width: 35px;
+            height: 35px;
+        }
+        .circle-icon img{
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element active_page">
+                        <img class="icon_nav" src="../Icons/Bell_blue.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="paiement.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+                <a href="profil.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/About.png" alt="">
+                        <span>A propos</span>
+                    </div>
+                </a> 
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Notification</h1>
+        <div class="notifications">
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon decliné">
+                            <img src="../Icons/decliné.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Rendez-Vous annulé!</span>
+                            <span class="heure-notif">Aujourd'hui | 14:56</span>
+                        </div>
+                    </div>
+                    <div class="notif-state"></div>
+                </div>
+                <div class="notif-text">
+                    Le rendez-vous avec Demba ba du 23 Août 2023 de 09:00 à 10:00 à été annulé.
+                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon modifié">
+                            <img src="../Icons/Date_range.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Horaire modifié</span>
+                            <span class="heure-notif">Hier | 12:18</span>
+                        </div>
+                    </div>
+                    <div class="notif-state "></div>
+                </div>
+                <div class="notif-text">
+                    La patiente Alimatou Ndiaye à modifié le rendez-vous qui devait se tenir le 24 Août de 9:00 à 11:00 au 29 Août de 9:00 à 10:00.                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon obtenu">
+                            <img src="../Icons/Money_Bag.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Retrait</span>
+                            <span class="heure-notif">14 Août 2023 | 20:36</span>
+                        </div>
+                    </div>
+                    <div class="notif-state notif-lue"></div>
+                </div>
+                <div class="notif-text">
+                    Vous avez effectué un retrait de 200 000 Fcfa via Orange Money. Ref OM36574.1238.456.
+                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon rappel">
+                            <img src="../Icons/Help.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Demande de Rendez-vous</span>
+                            <span class="heure-notif">12 Août 2023 | 15:42</span>
+                        </div>
+                    </div>
+                    <div class="notif-state notif-lue"></div>
+                </div>
+                <div class="notif-text">
+                    Mohamed Dieng et 3 autrespatients ont fait une demande de rendez-vous pour le 25 août 2023 de 09:30 à 11:30.
+                </div>
+            </a>
+        </div>
+        <br>
+    </main>
+    <script src="Js/notification.js"></script>
+</body>
+</html>

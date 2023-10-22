@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/paiement.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Paiement | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+    <link rel="stylesheet" href="../templatesCSS/boutton.css">
+    <style>
+        .somme_boite{
+            font-size: 20px;
+        }
+        .droite_hist{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element ">
+                        <img class="icon_nav" src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="paiement.html">
+                    <div class="element active_page">
+                        <img class="icon_nav" src="../Icons/Banknotes_blue.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+                <a href="profil.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/About.png" alt="">
+                        <span>A propos</span>
+                    </div>
+                </a> 
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Paiement</h1>
+        <div class="solde">
+            <div class="gauche">
+                <img src="../Icons/wallet.png" alt="">
+                <div class="g_droite">
+                    <p id="monsolde">Mon solde</p>
+                    <p id="somme_solde">300 000 Fcfa</p>
+                </div>
+            </div>
+            <a href="demander_paiement.html" class="button-link">
+                <button class="boutton-bleu">
+                    Demander un paiement
+                </button>
+            </a>
+        </div>
+        <p id="hist">Historique de paiement</p>
+        <div class="boite_hist">
+            <div class="haut_hist">
+                <div class="gauche_hist">
+                    <img src="../Icons/haut.png" alt="">
+                    <p class="somme_boite">-200 000 Fcfa</p>
+                </div>
+                <span class="droite_hist">
+                    <span id="date">21/08/2023</span> à <span id="heure">12 : 55</span>
+                </span>
+            </div>
+            <div class="bas_hist">
+                <span>
+                    <img src="../Icons/om.png" alt="">
+                </span>
+                <span id="numero_tel">77 123 45 67</span>
+                <span><span>Réf:</span><span id="reference">OM36547.12</span></span>
+            </div>
+        </div>
+        <div class="boite_hist">
+            <div class="haut_hist">
+                <div class="gauche_hist">
+                    <img src="../Icons/bas.png" alt="">
+                    <p class="somme_boite">500 000 Fcfa</p>
+                </div>
+                <span class="droite_hist">
+                    <span id="date">18/08/2023</span> à <span id="heure">16 : 47</span>
+                </span>
+            </div>
+            <div class="bas_hist">
+                <a id="det_rv" href="detail_rendez_vous.html">
+                    <img src="../Icons/eye_blue.png" alt="">
+                    <span>Détails du Rendez-Vous</span>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    <script src="Js/paiement.js"></script>
+</body>
+</html>

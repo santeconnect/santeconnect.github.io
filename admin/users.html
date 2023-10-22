@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="../templatesCSS/tableau.css">
+    <link rel="stylesheet" href="../templatesCSS/form-search-filter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Utillisateurs | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="validation.html">
+                    <div class="element">
+                        <img src="../Icons/user_check.png" alt="">
+                        <span>Validation</span>
+                    </div>
+                </a>
+                <a href="users.html">
+                    <div class="element active_page">
+                        <img src="../Icons/User_blue.png" alt="">
+                        <span>Utilisateurs</span>
+                    </div>
+                </a>
+                <a href="medecins.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Medecins</span>
+                    </div>
+                </a>
+
+                <a href="ajouter-specialite.html">
+                    <div class="element">
+                        <img src="../Icons/Specialites.png" alt="">
+                        <span>Spécialités</span>
+                    </div>
+                </a>
+
+                <a href="ajouter-hopital.html">
+                    <div class="element">
+                        <img src="../Icons/Hopital.png" alt="">
+                        <span>Hopitaux</span>
+                    </div>
+                </a>
+    
+                <a href="paiement.html">
+                    <div class="element">
+                        <img src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+
+                <a href="avis.html">
+                    <div class="element">
+                        <img src="../Icons/Comments.png" alt="">
+                        <span>Avis & Commentaires</span>
+                    </div>
+                </a>
+
+                <a href="faq.html">
+                    <div class="element">
+                        <img src="../Icons/Faq.png" alt="">
+                        <span>FAQ Management</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Tous les utilisateurs</h1>
+        <br> <br>
+        <form action="" class="form">
+            <div class="search">
+                <input type="text" placeholder="Rechercher">
+                <img src="../Icons/Search.png" alt="">
+            </div>
+            
+            <div class="send">
+                <input type="submit" value="Rechercher">
+            </div>
+        </form>
+        <br> <br>
+        
+        <p class="result-tableau">Résultat : 2 lignes</p>
+
+        <div class="tableau-container">
+            <table class="tableau">
+                <thead>
+                    <tr>
+                        <th>#No</th>
+                        <th>Nom complet</th>
+                        <th>Date naiss</th>
+                        <th>Date insc</th>
+                        <th>Email</th>
+                        <th>Genre</th>
+                        <th>Num Tél</th>
+                        <th>Nb RV</th>
+                        <th>Photo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Modou Gaye</td>
+                        <td>12/12/1999</td>
+                        <td>12/12/1999</td>
+                        <td>gaye.mohamed@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Astou Ndiom Fall</td>
+                        <td>12/12/1999</td>
+                        <td>12/12/1999</td>
+                        <td>astou@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Aïssatou Diallo</td>
+                        <td>12/12/1995</td>
+                        <td>12/12/1995</td>
+                        <td>aissatou.diallo@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mamadou Cissé</td>
+                        <td>12/12/1990</td>
+                        <td>12/12/1990</td>
+                        <td>mamadou.cisse@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Mariama Sow</td>
+                        <td>12/12/1985</td>
+                        <td>12/12/1985</td>
+                        <td>mariama.sow@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Ibrahima Kane</td>
+                        <td>12/12/1980</td>
+                        <td>12/12/1980</td>
+                        <td>ibrahima.kane@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ndeye Diouf</td>
+                        <td>12/12/1998</td>
+                        <td>12/12/1998</td>
+                        <td>ndeye.diouf@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>El Hadji Fall</td>
+                        <td>12/12/1975</td>
+                        <td>12/12/1975</td>
+                        <td>elhadji.fall@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Nafissatou Sarr</td>
+                        <td>12/12/1997</td>
+                        <td>12/12/1997</td>
+                        <td>nafissatou.sarr@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Moussa Sow</td>
+                        <td>12/12/1984</td>
+                        <td>12/12/1984</td>
+                        <td>moussa.sow@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Mame Fatou Kane</td>
+                        <td>12/12/1993</td>
+                        <td>12/12/1993</td>
+                        <td>mame.fatou.kane@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Abdoulaye Sow</td>
+                        <td>12/12/1982</td>
+                        <td>12/12/1982</td>
+                        <td>abdoulaye.sow@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Marième Samb</td>
+                        <td>12/12/1996</td>
+                        <td>12/12/1996</td>
+                        <td>marieme.samb@ugb.edu.sn</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Alioune Diop</td>
+                        <td>12/12/1981</td>
+                        <td>12/12/1981</td>
+                        <td>alioune.diop@ugb.edu.sn</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>5</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="Js/base.js"></script>
+</body>
+</html>
+

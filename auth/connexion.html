@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/connexion.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <title>Connexion | SanteConnect</title>
+        <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+    </head>
+    <body>
+        <div class="image-text">
+            <img src="../Images/imageconnexion.png" alt="" id="connect">
+            <span><b>Connectez-Vous</b></span>
+        </div>
+        <form method="POST" action="../user/home.html">
+            <div class="mail-password">
+                <div class="mail">
+                    <img src="../Icons/mail.png"  id="image1" alt="">
+                    <input type="email" id="compte" name="email1" placeholder="Adresse Email">
+                </div>
+                <div class="mots">
+                    <img src="../Icons/lock.png" id="image2" alt="">
+                    <img src="../Icons/hide.png" id="image3" alt="">
+                    <input type="password" id="pwd" name="pwd" placeholder="Mots de passe">
+                </div>
+            </div>
+            <a href="recup-mdp-web.html">Mots de passe oublié</a>
+            <div class="Sign">
+                <input type="submit" id="submit" name="envoie"  value="Connexion"> 
+            </div>
+            <div class="texte">
+                <p>Pas encore inscrit? <a href="register.html">Inscrivez-vous</a></p>
+            </div>
+        </form>
+        <script src="Js/Connexion.js"></script>
+    </body>
+</html>

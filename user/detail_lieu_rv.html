@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/detail_lieu_rv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Lieu de Rendez-Vous | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="home.html">
+                    <div class="element">
+                        <img src="../Icons/Home.png" alt="">
+                        <span>Acceuil</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element">
+                        <img src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="medecin _favoris.html">
+                    <div class="element">
+                        <img src="../Icons/Heart.png" alt="">
+                        <span>Favoris</span>
+                    </div>
+                </a>
+                <a href="Profil.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img src="../Icons/About.png" alt="">
+                        <span>A-propos</span>
+                    </div>
+                </a>
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Lieu Rendez-Vous</h1>
+        <br>
+        <div class="map">
+            <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896.0707188055582!2d-16.506019412018762!3d16.02338089748045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe95564b64d5b6f1%3A0x1efca5de99a9b8f4!2sHospital%20Center%20Regional%20De%20Saint-Louis!5e0!3m2!1sen!2ssn!4v1697644768095!5m2!1sen!2ssn" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="#">Hôpital régional de Saint-Louis</a>
+        </div>
+        <span class="sp">Services proches</span>
+        <div class="services-proche">
+            <div class="service-proche">
+                <img src="../Images/pharmacie.png" alt="">
+                <div class="detail-service">
+                    <span class="nom-service">Pharmacie du Boulevard Sud</span>
+                    <span class="distance-service">A 10m du lieu de rendez-vous</span>
+                </div>
+            </div>
+            <div class="service-proche">
+                <img src="../Images/om.png" alt="">
+                <div class="detail-service">
+                    <span class="nom-service">Kiosque Orange Money</span>
+                    <span class="distance-service">A 20m du lieu de rendez-vous</span>
+                </div>
+            </div>
+            <div class="service-proche">
+                <img src="../Images/wave.png" alt="">
+                <div class="detail-service">
+                    <span class="nom-service">Kiosque Wave</span>
+                    <span class="distance-service">A 30m du lieu de rendez-vous</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Js/detail_lieu_rv.js"></script>
+</body>
+</html>

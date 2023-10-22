@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/Css/base.css">
+    <link rel="stylesheet" href="../templatesCSS/tableau.css">
+    <link rel="stylesheet" href="../templatesCSS/boutton.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Base | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                
+                <a href="users.html">
+                    <div class="element active_page">
+                        <img src="../Icons/User_blue.png" alt="">
+                        <span>Utilisateurs</span>
+                    </div>
+                </a>
+                <a href="medecins.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Medecins</span>
+                    </div>
+                </a>
+                <a href="admin.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Admins</span>
+                    </div>
+                </a>
+                <a href="superusers.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Superusers</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Détails de Fatou Gaye</h1>
+        
+
+        <div class="photo-med-title"> 
+            <img src="../Images/dr-fatou.jpg" alt="" class="photo-med">
+            <h2>Profil</h2>
+        </div>
+        <form action="">
+
+            <div class="tableau-container">
+                <table class="tableau">
+                    
+                    <tr>
+                        <th>Nom Complet</th>
+                        <td>Fatou Gaye</td>
+                        <th>Email</th>
+                        <td>gysoft.sn@gmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Numéro de Tél</th>
+                        <td>77 123 45 67</td>
+                        <th>Date d'inscription</th>
+                        <td>12/09/2023</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Compte</th>
+                        <td><select name="" id="" style="border:1px solid #3C7ECC;padding: 5px;border-radius: 3px;">
+                            <option value="">user</option>
+                            <option value="">admin</option>
+                            <option value="">superuser</option>
+                        </select></td>
+                        <th>Nombre de RV</th>
+                        <td>5</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+            <br>
+            <button class="boutton-bleu">
+                Enregistrer
+            </button>
+        </form>
+    </main>
+    <script src="Js/base.js"></script>
+</body>
+</html>
+

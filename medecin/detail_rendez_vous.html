@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/detail_rendez_vous.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../templatesCSS/form-search-filter.css">
+    <link rel="stylesheet" href="../templatesCSS/tableau.css">
+    <link rel="stylesheet" href="../templatesCSS/boutton.css">
+    <title>Détail Rendez-Vous | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element active_page">
+                        <img class="icon_nav" src="../Icons/Calendar_blue.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element ">
+                        <img class="icon_nav" src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="demander_paiement.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+                <a href="profil.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/About.png" alt="">
+                        <span>A propos</span>
+                    </div>
+                </a> 
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Détail Rendez-Vous</h1>
+            <div class="tableau-container">
+                <table class="tableau">
+                    <tbody>
+                        <tr>
+                            <th>Numéro Rendez-Vous</th>
+                            <td>293674</td>
+                            <th>Nom Patient</th>
+                            <td>Khalifa Ababacar Ba</td>
+                        </tr>
+                        <tr>
+                            <th>Numéro Téléphone</th>
+                            <td>+221 76 123 47 77</td>
+                            <th>Email</th>
+                            <td>khalifaba@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Date du Rendez-Vous</th>
+                            <td>29/09/2023 </td>
+                            <th>Créneau du Rendez-Vous</th>
+                            <td>09:30 - 10:30</td>
+                        </tr>
+                        <tr>
+                            <th>Date de prise du Rendez-Vous</th>
+                            <td>29/09/2023 </td>
+                            <th>Etat Final du Rendez-Vous</th>
+                            <td>En attente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <a href="" class="button-link">
+                <button class="boutton-vert" style="margin-bottom: 20px;">
+                    Valider
+                </button>
+            </a>
+            <a href="" class="button-link">
+                <button class="boutton-rouge">
+                    Décliner
+                </button>
+            </a>
+            
+    </main>
+    <script src="Js/detail_rendez_vous.js"></script>
+</body>
+</html>

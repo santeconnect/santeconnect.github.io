@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/donner-avis-web.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Donner Avis | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="home.html">
+                    <div class="element">
+                        <img src="../Icons/Home.png" alt="">
+                        <span>Acceuil</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element">
+                        <img src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="medecin _favoris.html">
+                    <div class="element">
+                        <img src="../Icons/Heart.png" alt="">
+                        <span>Favoris</span>
+                    </div>
+                </a>
+                <a href="Profil.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img src="../Icons/About.png" alt="">
+                        <span>A-propos</span>
+                    </div>
+                </a>
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <div>
+            <div class="dr">
+                <h2>Dr. Fatou Ndiaye</h2>
+            </div>
+            <div class="evaluer">
+                <h4>Attribuer une note</h4>
+                <div class="star_border">
+                    <span><img src="../Icons/Star border.png" alt="" class="starborder"></span>
+                    <span><img src="../Icons/Star border.png" alt="" class="starborder"></span>
+                    <span><img src="../Icons/Star border.png" alt="" class="starborder"></span>
+                    <span><img src="../Icons/Star border.png" alt="" class="starborder"></span>
+                    <span><img src="../Icons/Star border.png" alt="" class="starborder"></span>
+                </div>
+                <div class="commentaire">
+                    <h4>Donner un avis</h4>
+                    <div>
+                        <textarea name="avis"  row="10" id="" class="area" >Écrivez votre avis...</textarea>
+                    </div>                                   
+                    <div class="go">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h4>Tous les avis</h4>
+                    <div class="avis">
+                        <div class="comment">
+                            <div class="head-comment">
+                                <img src="../Icons/profil.png" alt="">
+                                <div>
+                                    <strong>Ibrahima Souleymane Souané</strong> <br><br>
+                                    <img src="../Icons/star.png" alt="">
+                                    <img src="../Icons/star.png" alt="">
+                                    <img src="../Icons/star.png" alt="">
+                                    <img src="../Icons/star.png" alt="">
+                                    <img src="../Icons/star.png" alt="">
+            
+                                    <span class="date-comment">Il y'a 2 semaines</span>
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem voluptatibus, exercitationem deserunt natus corporis! Nisi eos eum, cupiditate inventore iure eius. Odit nostrum perferendis provident hic reprehenderit nesciunt eum?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="avis">
+                    <div class="comment">
+                        <div class="head-comment">
+                            <img src="../Icons/profil.png" alt="">
+                            <div>
+                                <strong>Saly Faye</strong> <br><br>
+                                <span class="date-comment">Il y'a 2 semaines</span>
+                            </div>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem voluptatibus, exercitationem deserunt natus corporis! Nisi eos eum, cupiditate inventore iure eius. Odit nostrum perferendis provident hic reprehenderit nesciunt eum?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Js/donner-avis-web.js"></script>
+</body>
+</html>

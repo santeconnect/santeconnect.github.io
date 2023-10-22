@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Inscription | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <div class="logo-text">
+        <img src="../Logos/logo_blue_text.png" alt="">
+        <span>Inscrivez-vous</span>
+    </div>
+    <form action="otp.html">
+        <div class="select-container">
+            <select name="type_compte" id="type_compte">
+                <option value="_">Type de compte</option>
+                <option value="patient">Patient</option>
+                <option value="medecin">Médecin</option>
+            </select>
+        </div>
+        <div class="email-container">
+            <img src="../Icons/mail.png" alt="">
+            <input type="text" id="email" placeholder="Adresse Email">
+        </div>
+        <div class="password-container">
+            <img src="../Icons/lock.png" id="lock" alt="">
+            <img src="../Icons/hide.png" id="status" alt="">
+            <input type="password" id="password"  placeholder="Mot de passe">
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">J'ai lu la <a href="politique_confidentialite.html" target="_blank">politique de confidentialité</a> et j'accepte  les <a target="_blank" href="condition_utilisation.html">conditions d'utilisation</a></label>
+        </div>
+        <div class="button-container">
+            <input type="submit" value="S'inscrire" id="submit">
+        </div>
+        <p class="already_logged">Déja inscrit ? <a href="connexion.html">Connectez-vous</a></p>
+    </form>
+    <script src="Js/register.js"></script>
+
+</body>
+</html>

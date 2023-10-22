@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="../templatesCSS/tableau.css">
+    <link rel="stylesheet" href="../templatesCSS/form-search-filter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Médecins | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="validation.html">
+                    <div class="element">
+                        <img src="../Icons/user_check.png" alt="">
+                        <span>Validation</span>
+                    </div>
+                </a>
+                <a href="users.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Utilisateurs</span>
+                    </div>
+                </a>
+                <a href="medecins.html">
+                    <div class="element active_page">
+                        <img src="../Icons/User_blue.png" alt="">
+                        <span>Medecins</span>
+                    </div>
+                </a>
+
+                <a href="ajouter-specialite.html">
+                    <div class="element">
+                        <img src="../Icons/Specialites.png" alt="">
+                        <span>Spécialités</span>
+                    </div>
+                </a>
+
+                <a href="ajouter-hopital.html">
+                    <div class="element">
+                        <img src="../Icons/Hopital.png" alt="">
+                        <span>Hopitaux</span>
+                    </div>
+                </a>
+    
+                <a href="paiement.html">
+                    <div class="element">
+                        <img src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+
+                <a href="avis.html">
+                    <div class="element">
+                        <img src="../Icons/Comments.png" alt="">
+                        <span>Avis & Commentaires</span>
+                    </div>
+                </a>
+
+                <a href="faq.html">
+                    <div class="element">
+                        <img src="../Icons/Faq.png" alt="">
+                        <span>FAQ Management</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Tous les médecins</h1> 
+        <br> <br>
+        <form action="" class="form">
+            <div class="search">
+                <input type="text" placeholder="Rechercher">
+                <img src="../Icons/Search.png" alt="">
+            </div>
+            <div class="filtrer">
+                <select name="" id="filtre" class="select">
+                    <option value="">Filtrer par</option>
+                    <option value="">Géolocalisation ajoutée</option>
+                    <option value="">Pas de Géolocalisation</option>
+                </select>
+            </div>
+            <div class="send">
+                <input type="submit" value="Rechercher">
+            </div>
+        </form>
+        <br> <br>
+        
+        <p class="result-tableau">Résultat : 2 lignes</p>
+
+        <div class="tableau-container">
+            <table class="tableau">
+                <thead>
+                    <tr>
+                        <th>#No</th>
+                        <th>Nom complet</th>
+                        <th>Date insc</th>
+                        <th>Email</th>
+                        <th>Spécialité</th>
+                        <th>Hôpotal</th>
+                        <th>Lieu RV</th>
+                        <th>Ville</th>
+                        <th>Genre</th>
+                        <th>Num Tél</th>
+                        <th>Photo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Modou Gaye</td>
+                        <td>12/12/1999</td>
+                        <td>gaye.mohamed@ugb.edu.sn</td>
+                        <td>Ophtalmologie</td>
+                        <td>Hôpital Fane</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Dakar</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Modou Moustapha Gaye</td>
+                        <td>12/12/1999</td>
+                        <td>gaye.mohamed@ugb.edu.sn</td>
+                        <td>Urologie</td>
+                        <td>Hôpital Khoury Dieye</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Mbour</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mariama Cissé</td>
+                        <td>15/08/1990</td>
+                        <td>mariama.cisse@ugb.edu.sn</td>
+                        <td>Gynécologie</td>
+                        <td>Hôpital Principal de Dakar</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Dakar</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Amadou Sow</td>
+                        <td>20/05/1985</td>
+                        <td>amadou.sow@ugb.edu.sn</td>
+                        <td>Pédiatrie</td>
+                        <td>Hôpital Régional de Thiès</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Thiès</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Moussa Ndiaye</td>
+                        <td>03/04/1988</td>
+                        <td>moussa.ndiaye@ugb.edu.sn</td>
+                        <td>Chirurgie générale</td>
+                        <td>Hôpital de Kaolack</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Kaolack</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Ndeye Aïssatou Diallo</td>
+                        <td>10/07/1993</td>
+                        <td>aissatou.diallo@ugb.edu.sn</td>
+                        <td>Ophtalmologie</td>
+                        <td>Hôpital de Ziguinchor</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Ziguinchor</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ibrahima Fall</td>
+                        <td>02/11/1987</td>
+                        <td>ibrahima.fall@ugb.edu.sn</td>
+                        <td>Dermatologie</td>
+                        <td>Hôpital Régional de Saint-Louis</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Saint-Louis</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Fatou Sarr</td>
+                        <td>25/12/1983</td>
+                        <td>fatou.sarr@ugb.edu.sn</td>
+                        <td>Cardiologie</td>
+                        <td>Hôpital de Kédougou</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Kédougou</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>El Hadji Ndiaye</td>
+                        <td>19/09/1991</td>
+                        <td>elhadji.ndiaye@ugb.edu.sn</td>
+                        <td>Gastro-entérologie</td>
+                        <td>Hôpital de Kolda</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Kolda</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Mame Khady Diop</td>
+                        <td>09/06/1986</td>
+                        <td>mame.khady.diop@ugb.edu.sn</td>
+                        <td>Pneumologie</td>
+                        <td>Hôpital Régional de Fatick</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Fatick</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Mouhamed Ndiaye</td>
+                        <td>17/03/1989</td>
+                        <td>mouhamed.ndiaye@ugb.edu.sn</td>
+                        <td>Neurologie</td>
+                        <td>Hôpital Régional de Louga</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Louga</td>
+                        <td>M</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Aïssatou Kane</td>
+                        <td>08/08/1994</td>
+                        <td>aissatou.kane@ugb.edu.sn</td>
+                        <td>Rhumatologie</td>
+                        <td>Hôpital de Matam</td>
+                        <td><a href="">Afficher</a></td>
+                        <td>Matam</td>
+                        <td>F</td>
+                        <td>771234567</td>
+                        <td>
+                            <a href="../Images/dr-fatou.jpg">voir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="Js/base.js"></script>
+</body>
+</html>
+

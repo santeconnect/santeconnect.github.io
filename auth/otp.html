@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/otp.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <title>OTP | SanteConnect</title>
+        <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+    </head>
+<body>
+    <div class="logo-text">
+        <img src="../Images/otp_image.png" alt="">
+        <span>Entrez le Code OTP</span>
+    </div>
+    <form action="perso-infos-web.html" id = "optform">
+        <div class="otp-text">
+            Un code de confirmation vous a été envoyée dans votre adresse email. Ne donnner ce code à personne
+        </div>
+        <div id="fields">
+            <input type="text" autocomplete="off" maxlength="1" class="field">
+            <input type="text" autocomplete="off" maxlength="1" class="field">
+            <input type="text" autocomplete="off" maxlength="1" class="field">
+            <input type="text" autocomplete="off" maxlength="1" class="field">
+        </div>
+        <div class="validate">
+            <input type="submit" value="Suivant" id="submit">
+        </div>
+        <div class="link-container">
+            <a href="#">Renvoyer OTP</a>
+        </div>
+    </form>
+    <script src="Js/otp.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/rendez_vous.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../templatesCSS/form.css">
+    <link rel="stylesheet" href="../templatesCSS/tableau.css">
+    <link rel="stylesheet" href="../templatesCSS/onglets.css">
+    <link rel="stylesheet" href="../templatesCSS/form-search-filter.css">
+    <title>Rendez-vous | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element active_page">
+                        <img class="icon_nav" src="../Icons/Calendar_blue.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element ">
+                        <img class="icon_nav" src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="paiement.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+                <a href="profil.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/About.png" alt="">
+                        <span>A propos</span>
+                    </div>
+                </a> 
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <div class="rendez_vous"><h1>Rendez-Vous</h1></div>
+        <div class="slider">
+            <div class="slideritem"><h4>Nouveau Rendez-Vous</h4></div>
+            <div class="slideritem bar"><h4>Tous les Rendez-Vous</h4></div>
+            <div class="slideritem "><h4>Créneaux</h4></div>
+        </div>
+        <br/>
+        <br/>
+        <div class="divs none">
+            <div class="contains">
+                <form action="">
+                    <div class="date">
+                        <label>Date du rendez-vous</label>
+                        <input type="text" placeholder="02/09/2023" onfocus="this.type='date'" onblur="this.type='text'">
+                    </div>
+                    <div  class="heure">
+                        <div class="debut">
+                            <label>Heure de début</label>
+                            <input type="text" placeholder="09:20" onfocus="this.type='time'" onblur="this.type='text'">
+                        </div>
+                        <div class="fin">
+                            <label>Heure de fin</label>
+                            <input type="text" placeholder="12:00" onfocus="this.type='time'" onblur="this.type='text'">
+                        </div>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" onchange="num()">
+                        <span>Limiter le nombre de personnes à recevoir</span>
+                    </div>
+                    <div class="numb" id="numb" style="display: none;">
+                        <input type="number" placeholder="Nombre Limite">
+                    </div>
+                    <div class="envoie">
+                        <input type="submit" value="Créer">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="divs">
+            <form action="#">
+                <div class="search">
+                    <input type="text" placeholder="Rechercher">
+                    <img src="../Icons/search.png" alt="">
+                </div>
+                <div class="filtrer">
+                    <select name="" id="filtre">
+                        <option value="">Filtrer par</option>
+                        <option value="">En attente</option>
+                        <option value="">Approuvé</option>
+                        <option value="">Décliné</option>
+                    </select>
+                </div>
+                <div class="send">
+                    <input type="submit" value="Rechercher">
+                </div>
+            </form>
+            <br>
+            <br>            
+            <p class="result-tableau">Résultat : 3 lignes</p>
+            <div class="tableau-container">
+            <table class="tableau">
+                <thead>
+                        <tr>
+                            <th>#No</th>
+                            <th>Num RV</th>
+                            <th>Date</th>
+                            <th>Créneau</th>
+                            <th>Nom Patient</th>
+                            <th>Num Tél</th>
+                            <th>Etat</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1232748436</td>
+                            <td>22/09/2023</td>
+                            <td>09:30 - 10:30</td>
+                            <td>Khalifa Ababacar Ba</td>
+                            <td>776548907</td>
+                            <td>En attente</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2367538843</td>
+                            <td>28/09/2023 </td>
+                            <td>08:00 - 12:00</td>
+                            <td>Oumar Sow</td>
+                            <td>784650812</td>
+                            <td>Approuvé</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3765478953</td>
+                            <td>29/09/2023 </td>
+                            <td>09:30 - 10:30</td>
+                            <td>Oumou Ka</td>
+                            <td>763542109</td>
+                            <td>Décliné</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>1232748436</td>
+                            <td>22/09/2023</td>
+                            <td>09:30 - 10:30</td>
+                            <td>Khalifa Ababacar Ba</td>
+                            <td>776548907</td>
+                            <td>En attente</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2367538843</td>
+                            <td>28/09/2023 </td>
+                            <td>08:00 - 12:00</td>
+                            <td>Oumar Sow</td>
+                            <td>784650812</td>
+                            <td>Approuvé</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>3765478953</td>
+                            <td>29/09/2023 </td>
+                            <td>09:30 - 10:30</td>
+                            <td>Oumou Ka</td>
+                            <td>763542109</td>
+                            <td>Décliné</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>1232748436</td>
+                            <td>22/09/2023</td>
+                            <td>09:30 - 10:30</td>
+                            <td>Khalifa Ababacar Ba</td>
+                            <td>776548907</td>
+                            <td>En attente</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>2367538843</td>
+                            <td>28/09/2023 </td>
+                            <td>08:00 - 12:00</td>
+                            <td>Oumar Sow</td>
+                            <td>784650812</td>
+                            <td>Approuvé</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>3765478953</td>
+                            <td>29/09/2023 </td>
+                            <td>09:30 - 10:30</td>
+                            <td>Oumou Ka</td>
+                            <td>763542109</td>
+                            <td>Décliné</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1232748436</td>
+                            <td>22/09/2023</td>
+                            <td>09:30 - 10:30</td>
+                            <td>Khalifa Ababacar Ba</td>
+                            <td>776548907</td>
+                            <td>En attente</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>2367538843</td>
+                            <td>28/09/2023 </td>
+                            <td>08:00 - 12:00</td>
+                            <td>Oumar Sow</td>
+                            <td>784650812</td>
+                            <td>Approuvé</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>3765478953</td>
+                            <td>29/09/2023 </td>
+                            <td>09:30 - 10:30</td>
+                            <td>Oumou Ka</td>
+                            <td>763542109</td>
+                            <td>Décliné</td>
+                            <td><a href="detail_rendez_vous.html" target="_parent">voir</a></td>
+                        </tr>
+                    </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="divs none">
+            <form action="#">
+                <div class="search">
+                    <input type="text" placeholder="Rechercher">
+                    <img src="../Icons/search.png" alt="">
+                </div>
+                <div class="filtrer">
+                    <select name="" id="filtre">
+                        <option value="">Filtrer par</option>
+                        <option value="">passés</option>
+                        <option value="">Aujourd'hui</option>
+                        <option value="">A venir</option>
+                    </select>
+                </div>
+                <div class="send">
+                    <input type="submit" value="Rechercher">
+                </div>
+            </form> 
+            <br>
+            <br>
+            <p class="result-tableau">Résultat : 3 lignes</p>
+            <div class="tableau-container">
+                <table class="tableau">
+                    <thead>
+                        <tr>
+                            <th>#No</th>
+                            <th>Date</th>
+                            <th>Créneau</th>
+                            <th>Nombre de patients</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>22/09/2023</td>
+                            <td>09:30 - 10:30</td>
+                            <td>9</td>
+                            <td><a href="creneaux.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>28/09/2023 </td>
+                            <td>08:00 - 12:00</td>
+                            <td>3</td>
+                            <td><a href="creneaux.html" target="_parent">voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>29/09/2023 </td>
+                            <td>09:30 - 10:30</td>
+                            <td>10</td>
+                            <td><a href="creneaux.html" target="_parent">voir</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="Js/rendez_vous.js"></script>
+    <script src="../templatesJS/onglets.js"></script>
+    <script>
+        function num(){
+            let numb = document.getElementById("numb");
+            if(numb.style.display==="none")
+                numb.style.display = "block";
+            else
+                numb.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/choisir_creneau.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Choisir Créneau | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="home.html">
+                    <div class="element">
+                        <img src="../Icons/Home.png" alt="">
+                        <span>Acceuil</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element">
+                        <img src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="medecin _favoris.html">
+                    <div class="element">
+                        <img src="../Icons/Heart.png" alt="">
+                        <span>Favoris</span>
+                    </div>
+                </a>
+                <a href="Profil.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img src="../Icons/About.png" alt="">
+                        <span>A-propos</span>
+                    </div>
+                </a>
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Choisir un Créneau</h1>
+        <div class="informations-medecins">
+            <img class="medecin-photo" src="../Images/fatou_ndiaye.png" alt="">  
+            <div class="med-infos">
+                <a href="#" class="med-name">Dr. Fatou Ndiaye</a>
+                <div class="spec-ville">
+                    <span>Cardiologue</span>
+                    <span>|</span>
+                    <span>Dakar</span>
+                </div>
+            </div>
+        </div>
+        <div class="details-rv">
+            <div class="calendar">
+                <div class="header-row">
+                    <img class="cal-slider" id="left" src="../Icons/chevron-left.png" alt="">
+                    <span id = "month-date"></span>
+                    <img class="cal-slider" id="right" src="../Icons/chevron-right.png" alt="">
+                </div>
+                <div class="weekdays">
+                    <span>Dim</span>
+                    <span>Lun</span>
+                    <span>Mar</span>
+                    <span>Mer</span>
+                    <span>Jeu</span>
+                    <span>Ven</span>
+                    <span>Sam</span>
+                </div>
+                <div id="days">
+                </div>
+            </div>
+            <form method="post" action="./finaliser.html" class="rv-informations">
+                <div class="rv-informations-bloc">
+                    <div class="clickable-row">
+                        <span>Lundi 14 Août 2023</span>
+                        <img class="chevrons" src="../Icons/chevron-down.png" alt="">
+                    </div>
+                    <div class="show-hide-rv">
+                        <div class="date-rows">
+                            <div class="date-row">
+                                <input type="radio" name="date" id = "date_radio_1-1">
+                                <label for="date_radio_1-1" id="date_label_1-1">08h30-09h</label>
+                                <input type="radio" name="date" id = "date_radio_1-2">
+                                <label for="date_radio_1-2" id="date_label_1-2">09h-10h</label>
+                                <input type="radio" name="date" id = "date_radio_1-3">
+                                <label for="date_radio_1-3" id="date_label_1-3">10h-11h</label>
+                            </div>
+                            <div class="date-row">
+                                <input type="radio" name="date" id = "date_radio_1-4">
+                                <label for="date_radio_1-4" id="date_label_1-4">11h-11h30</label>
+                                <input type="radio" name="date" id = "date_radio_1-5">
+                                <label for="date_radio_1-5" id="date_label_1-5">11h30-12h</label>
+                                <input type="radio" name="date" id = "date_radio_1-6">
+                                <label for="date_radio_1-6" id="date_label_1-6">12h-14h</label>
+                            </div>
+                        </div>
+                        <span class="lieu-rv">Lieu du rendez-vous <a href="#">Hopital  Fann</a></span>
+                    </div>
+                </div>
+                <div class="rv-informations-bloc">
+                    <div class="clickable-row">
+                        <span>Jeudi 16 Août 2023</span>
+                        <img class="chevrons" src="../Icons/chevron-down.png" alt="">
+                    </div>
+                    <div class="show-hide-rv">
+                        <div class="date-rows">
+                            <div class="date-row">
+                                <input type="radio" name="date1" id = "date_radio_2-1">
+                                <label for="date_radio_2-1" id="date_label_2-1">08h30-09h</label>
+                                <input type="radio" name="date1" id = "date_radio_2-2">
+                                <label for="date_radio_2-2" id="date_label_2-2">09h-10h</label>
+                                <input type="radio" name="date1" id = "date_radio_2-3">
+                                <label for="date_radio_2-3" id="date_label_2-3">10h-11h</label>
+                            </div>
+                            <div class="date-row">
+                                <input type="radio" name="date1" id = "date_radio_2-4">
+                                <label for="date_radio_2-4" id="date_label_2-4">11h-11h30</label>
+                                <input type="radio" name="date1" id = "date_radio_2-5">
+                                <label for="date_radio_2-5" id="date_label_2-5">11h30-12h</label>
+                                <input type="radio" name="date1" id = "date_radio_2-6">
+                                <label for="date_radio_2-6" id="date_label_2-6">12h-14h</label>
+                            </div>
+                        </div>
+                        <span class="lieu-rv">Lieu du rendez-vous <a href="#">Hopital  Fann</a></span>
+                    </div>
+                </div>
+                <input type="submit" class="suivant" value="Suivant">
+            </form>
+        </div>
+    </main>
+    <script src="Js/choisir_creneau.js"></script>
+    <script>
+        const current_date = document.getElementById("month-date"), days = document.getElementById("days");
+        const cal_slider = document.querySelectorAll(".cal-slider");
+        var date = new Date();
+        var currYear = date.getFullYear();
+        var currMonth = date.getMonth();
+        const months = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet",
+                        "Août","Septembre","Octobre","Novembre","Décembre"]
+        function calendrier() {
+            let firstDayMonth = new Date(currYear,currMonth, 1).getDay() ;
+            let lastDateMonth = new Date(currYear,currMonth + 1, 0).getDate() ;
+            let lastDayMonth = new Date(currYear,currMonth, lastDateMonth).getDay() ;
+            let lastDateLastMonth = new Date(currYear,currMonth, 0).getDate() ;
+
+            let li = "";
+            for (let i = firstDayMonth; i > 0; i--)
+                li += `<span class= "inactive">${lastDateLastMonth - i + 1}</span>`
+
+            for (let i = 1; i <= lastDateMonth; i++){
+                if(  i == 14 &&  currMonth == 7 && currYear == 2023)
+                    li += `<span class = "rv" style = "color: white">${i}</span>`
+                else if(  i == 16 &&  currMonth == 7 && currYear == 2023)
+                    li += `<span class = "rv" style = "color: white">${i}</span>`
+                else
+                    li += `<span>${i}</span>`
+            }
+
+            for (let i = lastDayMonth; i < 6; i++)
+                li += `<span class= "inactive">${i - lastDayMonth + 1}</span>`
+                
+            current_date.innerHTML = `${months[currMonth]} ${currYear}`
+            days.innerHTML = li;
+        }
+        calendrier();
+        cal_slider.forEach(slider => {
+            slider.addEventListener("click",()=>{
+                currMonth = slider.id === "left" ? currMonth - 1 : currMonth + 1;
+                
+                if (currMonth < 0 || currMonth > 11) {
+                    date = new Date(currYear,currMonth);
+                    currYear = date.getFullYear();
+                    currMonth = date.getMonth()
+                }
+                else{
+                    date = new Date();
+                }
+                calendrier();
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/notification.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Notification | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+    <style>
+        .notif-text, .heure-notif{
+            font-size: 15px;
+        }
+        .type-notif{
+            font-size: 17px;
+        }
+        .circle-icon{
+            width: 35px;
+            height: 35px;
+        }
+        .circle-icon img{
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="home.html">
+                    <div class="element">
+                        <img src="../Icons/Home.png" alt="">
+                        <span>Acceuil</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element active_page">
+                        <img class="reduce-icon" src="../Icons/Bell_blue.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="medecin _favoris.html">
+                    <div class="element">
+                        <img src="../Icons/Heart.png" alt="">
+                        <span>Favoris</span>
+                    </div>
+                </a>
+                <a href="Profil.html">
+                    <div class="element">
+                        <img src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img src="../Icons/About.png" alt="">
+                        <span>A-propos</span>
+                    </div>
+                </a>
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <h1>Notification</h1>
+        <div class="notifications">
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon decliné">
+                            <img src="../Icons/decliné.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Rendez-Vous decliné!</span>
+                            <span class="heure-notif">Aujourd'hui | 14:56</span>
+                        </div>
+                    </div>
+                    <div class="notif-state"></div>
+                </div>
+                <div class="notif-text">
+                    Le rendez-vous avec Dr. Papa Ahmadou Ndiaye  du 23 Août 2023 à l’hopital régional de Saint-Louis a été decliné. Nous nous excusons de ce désagrément Bonne Journée à vous.
+                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon modifié">
+                            <img src="../Icons/modifié.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Horaire modifié</span>
+                            <span class="heure-notif">Hier | 12:18</span>
+                        </div>
+                    </div>
+                    <div class="notif-state"></div>
+                </div>
+                <div class="notif-text">
+                    Vous avez modifé le rendez-vous avec Dr. Fatou Sarr qui devrait se tenir le 24 Août à 9:00 au 29 Août à 9:00. Veuillez activer votre alarme ppour ne pas le manquer.
+                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon obtenu">
+                            <img src="../Icons/obtenu.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Rendez-Vous obtenu!</span>
+                            <span class="heure-notif">14 Août 2023 | 20:36</span>
+                        </div>
+                    </div>
+                    <div class="notif-state notif-lue"></div>
+                </div>
+                <div class="notif-text">
+                    Vous avez obtenu un rendez-vous avec Dr. Soukeyna Ndiaye qui se tiendra le 02 Août à 9:00 à l’hôpital Ousmane Ngom. N’oublier pas d’activer une alarme pour ne pas le manquer.
+                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon rappel">
+                            <img src="../Icons/rappel.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Rappel</span>
+                            <span class="heure-notif">12 Août 2023 | 15:42</span>
+                        </div>
+                    </div>
+                    <div class="notif-state notif-lue"></div>
+                </div>
+                <div class="notif-text">
+                    On tenait à vous rappeler que lerendez-vous avec Dr. Moussa Diop se tiendra demain à 10:00. Veuillez activer votre alarme pour ne pas le manquer.
+                </div>
+            </a>
+            <a href="#" class="notification">
+                <div class="header-notif">
+                    <div class="notif-header-left">
+                        <div class="circle-icon annulé">
+                            <img src="../Icons/annulé.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="type-notif">Rendez-Vous annulé!</span>
+                            <span class="heure-notif">31 Juillet 2023 | 14:56</span>
+                        </div>
+                    </div>
+                    <div class="notif-state notif-lue"></div>
+                </div>
+                <div class="notif-text">
+                    Le rendez-vous avec Dr. Papa Ahmadou Ndiaye  du 23 Août 2023 de 08:00 à 10:00 a été annulé. Vous allez être remboursé dans les 48H, Jour non-ouvrables exclus.
+                </div>
+            </a>
+        </div>
+        <br>
+    </main>
+    <script src="Js/notification.js"></script>
+</body>
+</html>

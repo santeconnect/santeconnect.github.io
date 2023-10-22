@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/requete.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Requête | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+    <link rel="stylesheet" href="../templatesCSS/boutton.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="paiement.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+                <a href="profil.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/User.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/About.png" alt="">
+                        <span>A propos</span>
+                    </div>
+                </a> 
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img" src="../Icons/menu.png" alt="">
+        </div>
+        <div class="logo" >
+            <img id="princiapale" src="../Logos/logo_blue_text.png" alt="">
+        </div>
+        <h1>Demande de modification d’informations personnelles</h1>
+        <form action="#" method="post">
+            <div class="champ">
+                <input class="readonly" name="mail_info_pers" value="exemple@azer.com" type="email" readonly="readonly">
+            </div>
+            <div class="champ">
+                <input class="readonly" readonly="readonly" value="Demande de modification d’information Dem-124A45B" type="text">
+            </div>
+            <div class="champ">
+                <textarea name="comment_info_pers" id="" cols="40" rows="5" placeholder="Ecrivez nous"></textarea>
+            </div>
+            <br>
+            <a href="" class="button-link">
+                <button class="boutton-bleu">
+                    Soumettre
+                </button>
+            </a>
+            
+        </form>
+    </main>
+    <script src="Js/requete.js"></script>
+</body>
+</html>

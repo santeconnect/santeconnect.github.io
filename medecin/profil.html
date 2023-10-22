@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/profil.css">
+    <link rel="stylesheet" href="../templatesCSS/boutton.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Profil | SanteConnect</title>
+    <link rel="shortcut icon" href="../Icons/Logo_blue.ico" type="image/x-icon">
+    <meta name="description" content="SantéConnect, obtenez un rendez-vous avec le médecin de votre choix en un Click!">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../Logos/logo_white_text.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="dashboard.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Book.png" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="rendez_vous.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Calendar.png" alt="">
+                        <span>Rendez-Vous</span>
+                    </div>
+                </a>
+                <a href="notification.html">
+                    <div class="element ">
+                        <img class="icon_nav" src="../Icons/Bell.png" alt="">
+                        <span>Notification</span>
+                    </div>
+                </a>
+                <a href="paiement.html">
+                    <div class="element ">
+                        <img class="icon_nav" src="../Icons/Banknotes.png" alt="">
+                        <span>Paiement</span>
+                    </div>
+                </a>
+                <a href="profil.html">
+                    <div class="element active_page">
+                        <img class="icon_nav" src="../Icons/User_blue.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+                <a href="apropos.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/About.png" alt="">
+                        <span>A propos</span>
+                    </div>
+                </a> 
+                <a href="faq.html">
+                    <div class="element">
+                        <img class="icon_nav" src="../Icons/Faq.png" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="#">
+                <div class="element">
+                    <img src="../Icons/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a>  
+        </div>
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="../Icons/menu.png" alt="">
+        </div>
+        <form action="#" method="post">
+            <div class="profile-pic-container">
+                <div class="pic-div">
+                    <img src="../Images/badji.jpeg" id="profile-pic" alt="">
+                    <input type="file" name="input-photo" id="input-photo">
+                    <label for="input-photo" id="edit-label">
+                        <img src="../Icons/image_input.png" alt="">
+                    </label>
+                </div>
+            </div>
+            <div class="container">
+                <label for="nom">Nom complet</label> <br>
+                <input readonly="readonly" type="text" id="nom" value="Ousmane Badji Touré">
+            </div>
+
+            <div class="container">
+                <label for="num_telephone">Numéro de téléphone</label> <br>
+                <input readonly="readonly" type="text" id="num_telephone" value="77 123 45 67">
+            </div>
+            <div class="container">
+                <label for="specialite">Spécialité</label> <br>
+                <input readonly="readonly" type="text" id="specialite" value="Gynecologue">
+            </div>
+            <div class="container">
+                <label for="genre">Genre</label> <br>
+                <input readonly="readonly" type="text" id="genre" value="Masculin">
+            </div>
+            <div class="container">
+                <label for="hopital">Hôpital actuel</label> <br>
+                <input readonly="readonly" type="text" id="hopital" value="Hôpital Régionnal de Saint-Louis">
+            </div>
+            <div class="container">
+                <label for="lieu_rv">Lieu du rendez-vous</label> <br>
+                <input readonly="readonly" type="text" id="lieu_rv" value="Pikine">
+            </div>   
+            <div class="container">
+                    <label for="ville_rv">Ville du rendez-vous</label> <br>
+                    <input readonly="readonly" type="text" id="ville_rv" value="Saint-Louis">
+            </div>
+            <div class="container cas_particulier">
+                <a href="#" class="boutton-bleu boutton-link">
+                    <img src="../images/upload.png" alt="">
+                    Attestation
+                </a>
+                <a href="#" class="boutton-bleu boutton-link">
+                    <img src="../images/upload.png" alt="">
+                    Carte professionnelle
+                </a>
+            </div>
+            <div class="container">
+                <img src="../Icons/info.png" alt="">
+                Pour toute modification, veuillez nous <a id="contacter" href="requete.html">contacter</a> .
+            </div>
+            <div class="container" id="ligne"><br></div>
+        </form>
+        <form action="#" method="post">
+            <div class="container">
+                <label for="bio">Bio</label> <br>
+                <textarea name="bio" id="bio" cols="30" rows="7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ut quasi repellat, a dignissimos alias! Voluptas corporis autem commodi quidem distinctio error impedit, laudantium dignissimos cumque quaerat, sequi molestiae soluta ab minus. Accusantium, praesentium voluptate p</textarea>
+            </div>
+            <div class="container">
+                <input type="submit" class="boutton-bleu" value="Modifier ma bio">
+            </div>
+            <div class="container" id="ligne"> <br></div>
+        </form>
+
+        <form action="#" method="post">
+            <h2 class="container">Tarifs de consultation</h2>
+            <div class="container">
+                <label for="enfant">Tarif enfant</label> <br>
+                <input type="number" id="enfant" placeholder="Entrez le tarif enfant">
+            </div>
+            <div class="container"> 
+                <label for="adulte">Tarif adulte</label> <br>
+                <input type="number" id="adulte" placeholder="Entrez le tarif adulte">
+            </div>
+            <div  class=" container ">
+                <input class="boutton-bleu" type="submit" id="submit" value="Valider">
+            </div>
+        </form>
+    </main>
+    <script src="Js/profil.js"></script>
+</body>
+</html>
