@@ -3,7 +3,7 @@
 }
 .tableau-container{
     overflow-x: scroll;
-    height: 600px;
+    max-height: 600px;
     overflow-y: scroll;
 }
 
