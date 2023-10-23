@@ -146,10 +146,9 @@ main{
 .boite_rv {
     border-radius: 12px;
     position: relative;
-    width: 45%;
-    height: 99px;
+    width: 100%;
+    height: 130px;
     align-items: stretch;
-    margin: 10px;
 }
 .tout {
     background-color: #3C7ECC;
@@ -173,8 +172,9 @@ main{
     justify-content: center;
     width: 100%;
 }
+
 .boite_rv span {
-    font-size:40px;
+    font-size:50px;
     font-weight: bold;
     color: white;   
     
@@ -188,12 +188,13 @@ main{
 .detail_rv {
     display: flex;
     justify-content: space-between;
-    
+    gap: 20px;
     
 }
 .part {
     display: flex;
     flex-direction: row;
+    gap: 15px;
     width: 100%;
 }
 
