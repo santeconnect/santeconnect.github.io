@@ -72,7 +72,7 @@ nav{
 main{
     margin-left: 17%;
     width: 83%;
-    padding: 25px 30px;
+    /* padding: 25px 30px; */
     position: relative;
     background-color: #F9F9F9;
     transition: all .5s ease;
@@ -84,6 +84,8 @@ main{
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 0 30px;
+    padding-top: 25px;
     margin-bottom: 30px;
 }
 .user_informations img{
@@ -106,12 +108,13 @@ main{
 #search-form{
     position: relative;
     width: 100%;
+    padding: 0 30px;
     margin: 30px 0;
 }
 #search-form img{
     position: absolute;
     top: 10px;
-    left: 17px;
+    left: 50px;
 }
 #search-input{
     width: 100%;
@@ -141,7 +144,7 @@ main{
     height: 150px;
     background-color: #407BFF;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-left: 30px;
 }
 .left-bloc{
     width: 320px;
@@ -182,7 +185,8 @@ main{
 .specialites{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    padding: 0 30px;
+    gap: 30px;
     margin: 30px 0;
 }
 .head-specialites{
@@ -238,7 +242,7 @@ main{
 }
 .added-to-cart{
     display: inline-flex;
-    margin-right: 20px;
+    margin-left: 30px;
 }
 hr{
     border: 1px solid #E5E5E5;

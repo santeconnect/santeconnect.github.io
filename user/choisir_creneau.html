@@ -67,7 +67,7 @@
             </div>
         </div>
         <div id="logout-container">
-            <a href="#">
+            <a href="../auth/connexion.html">
                 <div class="element">
                     <img src="../Icons/Logout.png" alt="">
                     <span>Déconnexion</span>
@@ -113,7 +113,7 @@
             <form method="post" action="./finaliser.html" class="rv-informations">
                 <div class="rv-informations-bloc">
                     <div class="clickable-row">
-                        <span>Lundi 14 Août 2023</span>
+                        <span>Lundi 23 Octobre 2023</span>
                         <img class="chevrons" src="../Icons/chevron-down.png" alt="">
                     </div>
                     <div class="show-hide-rv">
@@ -135,12 +135,12 @@
                                 <label for="date_radio_1-6" id="date_label_1-6">12h-14h</label>
                             </div>
                         </div>
-                        <span class="lieu-rv">Lieu du rendez-vous <a href="#">Hopital  Fann</a></span>
+                        <span class="lieu-rv">Lieu du rendez-vous <a href="detail_lieu_rv.html">Hopital  Fann</a></span>
                     </div>
                 </div>
                 <div class="rv-informations-bloc">
                     <div class="clickable-row">
-                        <span>Jeudi 16 Août 2023</span>
+                        <span>Jeudi 26 Octobre 2023</span>
                         <img class="chevrons" src="../Icons/chevron-down.png" alt="">
                     </div>
                     <div class="show-hide-rv">
@@ -162,7 +162,7 @@
                                 <label for="date_radio_2-6" id="date_label_2-6">12h-14h</label>
                             </div>
                         </div>
-                        <span class="lieu-rv">Lieu du rendez-vous <a href="#">Hopital  Fann</a></span>
+                        <span class="lieu-rv">Lieu du rendez-vous <a href="detail_lieu_rv.html">Hopital  Fann</a></span>
                     </div>
                 </div>
                 <input type="submit" class="suivant" value="Suivant">
@@ -189,9 +189,9 @@
                 li += `<span class= "inactive">${lastDateLastMonth - i + 1}</span>`
 
             for (let i = 1; i <= lastDateMonth; i++){
-                if(  i == 14 &&  currMonth == 7 && currYear == 2023)
+                if(  i == 23 &&  currMonth == 9 && currYear == 2023)
                     li += `<span class = "rv" style = "color: white">${i}</span>`
-                else if(  i == 16 &&  currMonth == 7 && currYear == 2023)
+                else if(  i == 26 &&  currMonth == 9 && currYear == 2023)
                     li += `<span class = "rv" style = "color: white">${i}</span>`
                 else
                     li += `<span>${i}</span>`
