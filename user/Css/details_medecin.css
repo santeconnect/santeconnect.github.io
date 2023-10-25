@@ -121,7 +121,12 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.detail span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .AV{
     display: flex;
     justify-content: space-between;
