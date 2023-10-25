@@ -88,7 +88,7 @@ main{
     padding-top: 25px;
     margin-bottom: 30px;
 }
-.user_informations img{
+.user_informations a img{
     width: 50px;
     border-radius: 50%;
 }
@@ -133,8 +133,6 @@ main{
 }
 .pub-slider{
     min-width: 100%;
-    overflow: auto;
-    white-space: nowrap;
     margin: 30px 0;
 }
 .pub-bloc{

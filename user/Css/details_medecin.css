@@ -88,6 +88,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .fatou > img{
     width: 150px;
@@ -95,7 +96,13 @@ main{
     border-radius: 100px;
     margin-top: 40px;
 }
-figcaption p{
+.cap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cap p{
     margin-top: 20px;
     color: black;
     font-size: 30px;
@@ -119,6 +126,7 @@ figcaption p{
     justify-content: space-between;
 }
 .barre-avis{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;

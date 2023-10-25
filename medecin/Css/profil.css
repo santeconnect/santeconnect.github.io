@@ -277,6 +277,12 @@ label {
         margin-left: 35%;
         width: 65%;
     }
+    .element img{
+        width: 20px;
+    }
+    .element span{
+        font-size: 15px;
+    }
 }
 
 /*Cinquième breackpoint : Largeur : 565pixels*/
@@ -306,11 +312,4 @@ label {
     #menu-img.active{
         display: none;
     }
-
-    
-
-    .element span{
-        font-size: 10px;
-    }
-    
 }
